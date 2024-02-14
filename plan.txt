@@ -1,0 +1,19 @@
+Create directory structure
+Create a NPM project using -- npm init
+install basic dependencies
+  dependencies
+    express
+    ejs
+    express-ejs-layouts
+  dev dependencies
+    nodemon
+Create server.js main file
+
+
+
+
+
+
+
+
+
