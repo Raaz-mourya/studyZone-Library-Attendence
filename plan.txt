@@ -7,7 +7,20 @@ install basic dependencies
     express-ejs-layouts
   dev dependencies
     nodemon
-Create server.js main file
+Create express and server.js main file
+Git setup and first commit
+install Laravel Mix
+create homepage and layout
+create register and login page with routes and html, css 
+Admin credential
+    admin@gmail.com
+    123
+
+
+
+
+
+
 
 
 

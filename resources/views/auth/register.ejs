@@ -1,0 +1,79 @@
+<section class="register-page flex justify-center pt-24">
+  <div class="w-full max-w-xs">
+    <form action="/register" method="POST" class="bg-white shadow rounded-md px-8 pt-6 pb-8 mb-4" autocomplete="off">
+      <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2"
+        >Name <b>*</b></label
+      >
+      <input name="name" value="<%= messages.name %>"
+        class="shadow apperance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="text"
+        placeholder="Enter your name"
+      />
+      </div>
+      <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2"
+        >Email <b>*</b></label
+      >
+      <input name="email" value="<%= messages.email %>"
+        class="shadow apperance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="email"
+        placeholder="Enter your email"
+      />
+      </div>
+
+      <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2"
+        >Password <b>*</b></label
+      >
+      <input name="password"
+        class="shadow apperance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="password"
+        placeholder="*************"
+      />
+      </div>
+
+      <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2"
+        >Phone <b>*</b></label
+      >
+      <input name="phone" value="<%= messages.phone %>"
+        class="shadow apperance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="number"
+        placeholder="Enter your mobile number"
+      />
+      </div>
+
+      <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2"
+        >Date of Birth <b>*</b></label
+      >
+      <input name="dob" value="<%= messages.dob %>"
+        class="shadow apperance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="date"
+        placeholder="Select DOB"
+      />
+      </div>
+
+      <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2"
+        >Request seat number</label
+      >
+      <input name="seatNumber" value="<%= messages.seatNumber %>"
+        class="shadow apperance-none border rounded w-full py-2 px-3 mb-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        type="number"
+        placeholder="Enter seat number"/>
+        <% if (messages.error) {%>
+        <span class="text-red-500 text-small"><%= messages.error %></span>
+          <% } %>
+      </div>
+      
+
+      <div class="flex items-center justify-center">
+        <button class="btn-primary rounded-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Register</button>
+      </div>
+      
+    </form>
+  </div>
+</section>
+

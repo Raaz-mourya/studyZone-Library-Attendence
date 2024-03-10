@@ -1,0 +1,60 @@
+@import "./variables";
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss"; 
+
+
+* {
+  box-sizing: border-box;
+}
+
+.noty_theme__mint {
+  border-radius: 50px !important;
+  padding-left: 5px !important;
+  font-weight: 800;
+  letter-spacing: 2px;
+  
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: $dark;
+}
+
+header {
+  background: $diff;
+}
+nav li a {
+  color: $dark;
+  transition: $smooth;
+
+  &:hover {
+    color: $primary;
+  }
+}
+
+section.hero {
+  background-color: $secondry;
+  height: 100vh;
+  min-width: 100%;
+}
+
+
+.btn-primary {
+    background: $primary;
+    transition: $smooth;
+    font-weight: 600;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+section {
+  background: $secondry;
+  min-height: calc(100vh - 105px);
+
+}
+
+
+label b {
+  color: $primary;
+}
